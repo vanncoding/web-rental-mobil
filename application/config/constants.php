@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+define('ADMIN_PHONE', '62895386351878');
 
 /*
 |--------------------------------------------------------------------------

@@ -12,10 +12,15 @@
                     <span class="badge bg-dark border border-secondary px-3 py-2"><i class="bi bi-clock-fill text-gold"></i> Layanan 24/7</span>
                     <span class="badge bg-dark border border-secondary px-3 py-2"><i class="bi bi-star-fill text-warning"></i> Rating 4.9</span>
                 </div>
-                <div class="mt-4 d-flex gap-2">
-                    <input type="text" class="form-control bg-dark text-white border-secondary" style="max-width: 300px;" placeholder="Cari mobil favorit Anda...">
-                    <button class="btn btn-gold px-4">Cari</button>
-                </div>
+                <form method="get" action="<?= base_url('home') ?>" class="mt-4 d-flex gap-2">
+                    <input type="text" name="search" class="form-control bg-dark text-white border-secondary"
+                        style="max-width: 300px;" placeholder="Cari mobil favorit Anda..."
+                        value="<?= $keyword ?? '' ?>">
+                    <button type="submit" class="btn btn-gold px-4">Cari</button>
+                </form>
+                <?php if (!empty($keyword)): ?>
+                    <a href="<?= base_url('home') ?>" class="btn btn-outline-secondary btn-sm mt-2">Reset</a>
+                <?php endif; ?>
             </div>
             <div class="col-lg-5 d-none d-lg-block text-center">
                 <img src="<?= base_url('uploads/Depan.png') ?>"
@@ -80,5 +85,10 @@
         </div>
     </div>
 </section>
-
+<?php if (!empty($keyword)): ?>
+    <div class="alert alert-info mb-3">
+        Hasil pencarian untuk: <strong>"<?= $keyword ?>"</strong>
+        (<?= count($mobil) ?> hasil ditemukan)
+    </div>
+<?php endif; ?>
 <?php $this->load->view('template/footer'); ?>

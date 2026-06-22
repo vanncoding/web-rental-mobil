@@ -5,7 +5,6 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7">
-                <span class="badge bg-gold text-dark fw-bold mb-3" style="background: #D4AF37;">✦ Exclusive Collection</span>
                 <h1 class="display-3 fw-bold">Rental Mobil<br><span class="text-gold">Solusi Kebutuhan untuk mobilitas anda</span></h1>
                 <p class="text-secondary lead">Armada premium pilihan terbaik. Proses mudah, pengalaman mewah, setiap perjalanan jadi istimewa.</p>
                 <div class="d-flex flex-wrap gap-3 mt-3">

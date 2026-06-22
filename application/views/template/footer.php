@@ -4,8 +4,8 @@
         <div class="row g-4">
             <div class="col-lg-4">
                 <h5 class="text-gold fw-bold"><i class="bi bi-star-fill"></i> PremiumRental</h5>
-                <p class="text-secondary" style="font-size: 0.9rem;">Solusi sewa mobil premium terpercaya dengan armada terawat dan layanan profesional 24/7 untuk setiap perjalanan Anda.</p>
-                <p class="text-gold small">Night Drive Luxury</p>
+                <p class="text-secondary" style="font-size: 0.9rem;">Solusi sewa mobil Untuk kebutuhan mobilitas anda dengan armada yang terawat dan layanan 24/jam.</p>
+                <!-- <p class="text-gold small"></p> -->
             </div>
             <div class="col-lg-2 col-6">
                 <h6 class="text-white fw-bold">Tautan Cepat</h6>
@@ -22,12 +22,12 @@
                 <ul class="list-unstyled text-secondary small">
                     <li><i class="bi bi-geo-alt text-gold"></i> JL. Sudirman No. 123, Jakarta Pusat</li>
                     <li><i class="bi bi-telephone text-gold"></i> +62 812-3456-7890</li>
-                    <li><i class="bi bi-envelope text-gold"></i> halo@premiumrental.id</li>
+                    <li><i class="bi bi-envelope text-gold"></i> @premiumrental.id</li>
                 </ul>
             </div>
             <div class="col-lg-3">
                 <h6 class="text-white fw-bold">Ikuti Kami</h6>
-                <p class="text-secondary small">Ikuti kami untuk promo eksklusif, tips berkembang, dan konten armada terbaru.</p>
+                <p class="text-secondary small">Promo dan Update tentang armada Kami</p>
                 <div class="d-flex gap-3 fs-5">
                     <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>
                     <a href="#" class="text-secondary"><i class="bi bi-youtube"></i></a>
@@ -37,7 +37,7 @@
         </div>
         <hr class="border-secondary">
         <div class="text-center text-secondary small">
-            © 2026 PremiumRental. Seluruh hak dilindungi. <br> Dibuat dengan <i class="bi bi-heart-fill text-danger"></i> untuk pengalaman berkembang.
+            © 2026 PremiumRental <br> </i> 
         </div>
     </div>
 </footer>

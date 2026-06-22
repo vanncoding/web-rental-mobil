@@ -1,12 +1,12 @@
 <?php $this->load->view('template/header', ['title' => 'Home']); ?>
 
 <!-- HERO -->
-<section class="py-5" style="background: linear-gradient(135deg, #0A0A0A 60%, #1A2A4A);">
+<section class="py-5" style="background: linear-gradient(135deg, #0A0A0A 60%, #a9acb3);">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7">
                 <span class="badge bg-gold text-dark fw-bold mb-3" style="background: #D4AF37;">✦ Exclusive Collection</span>
-                <h1 class="display-3 fw-bold">Pilih Armada Anda,<br><span class="text-gold">Perjalanan Tanpa Batas</span></h1>
+                <h1 class="display-3 fw-bold">Rental Mobil<br><span class="text-gold">Solusi Kebutuhan untuk mobilitas anda</span></h1>
                 <p class="text-secondary lead">Armada premium pilihan terbaik. Proses mudah, pengalaman mewah, setiap perjalanan jadi istimewa.</p>
                 <div class="d-flex flex-wrap gap-3 mt-3">
                     <span class="badge bg-dark border border-secondary px-3 py-2"><i class="bi bi-check-circle-fill text-success"></i> Armada Terawat</span>
@@ -19,10 +19,10 @@
                 </div>
             </div>
             <div class="col-lg-5 d-none d-lg-block text-center">
-                <div class="bg-dark p-4 rounded-4" style="border: 1px solid rgba(212,175,55,0.2);">
-                    <i class="bi bi-car-front-fill text-gold" style="font-size: 120px;"></i>
-                    <p class="text-gold small mt-2">Premium Fleet</p>
-                </div>
+                <img src="<?= base_url('uploads/Depan.png') ?>"
+                    alt="Fleet Premium"
+                    class="img-fluid"
+                    style="max-height: 400px; object-fit: contain; filter: drop-shadow(0 10px 30px (212,175,55,0.2));">
             </div>
         </div>
     </div>

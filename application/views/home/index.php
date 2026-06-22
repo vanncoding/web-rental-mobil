@@ -38,43 +38,45 @@
             </div>
         </div>
         <div class="row g-4">
-            <?php foreach($mobil as $mbl): ?>
-            <div class="col-md-4 col-lg-4">
-                <div class="glass-card p-0 overflow-hidden h-100">
-                    <div class="position-relative" style="height: 220px; background: #111;">
-                        <?php if($mbl->gambar && file_exists('./uploads/'.$mbl->gambar)): ?>
-                            <img src="<?= base_url('uploads/'.$mbl->gambar) ?>" class="w-100 h-100 object-fit-cover" style="object-fit: cover;">
-                        <?php else: ?>
-                            <div class="d-flex justify-content-center align-items-center h-100 text-secondary">
-                                <i class="bi bi-image" style="font-size: 60px;"></i>
-                            </div>
-                        <?php endif; ?>
-                        <span class="position-absolute top-0 end-0 m-3 badge badge-<?= strtolower(str_replace(' ', '', $mbl->status)) ?> badge-status">
-                            <?= $mbl->status ?>
-                        </span>
-                    </div>
-                    <div class="p-4">
-                        <h5 class="text-white fw-bold"><?= $mbl->nama_mobil ?></h5>
-                        <p class="text-gold small"><?= $mbl->merk ?></p>
-                        <div class="d-flex gap-3 text-secondary small mb-3">
-                            <span><i class="bi bi-gear"></i> <?= $mbl->transmisi ?></span>
-                            <span><i class="bi bi-calendar3"></i> <?= $mbl->tahun ?></span>
+            <?php foreach ($mobil as $mbl): ?>
+                <div class="col-md-4 col-lg-4">
+                    <div class="glass-card p-0 overflow-hidden h-100">
+                        <div class="position-relative" style="height: 220px; background: #111;">
+                            <?php if ($mbl->gambar && file_exists('./uploads/' . $mbl->gambar)): ?>
+                                <img src="<?= base_url('uploads/' . $mbl->gambar) ?>" class="w-100 h-100 object-fit-cover" style="object-fit: cover;">
+                            <?php else: ?>
+                                <div class="d-flex justify-content-center align-items-center h-100 text-secondary">
+                                    <i class="bi bi-image" style="font-size: 60px;"></i>
+                                </div>
+                            <?php endif; ?>
+                            <!-- BADGE DIHAPUS DARI SINI -->
                         </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="text-white fw-bold fs-5">Rp <?= number_format($mbl->harga_per_hari,0,',','.') ?> <small class="text-secondary fw-normal">/ hari</small></span>
-                            <?php if($mbl->status == 'Tersedia'): ?>
-                                <?php 
+                        <div class="p-4">
+                            <!-- BADGE DIPINDAHKAN KE SINI (di atas nama mobil) -->
+                            <span class="badge badge-<?= strtolower(str_replace(' ', '', $mbl->status)) ?> badge-status mb-2">
+                                <?= $mbl->status ?>
+                            </span>
+                            <h5 class="text-white fw-bold"><?= $mbl->nama_mobil ?></h5>
+                            <p class="text-gold small"><?= $mbl->merk ?></p>
+                            <div class="d-flex gap-3 text-secondary small mb-3">
+                                <span><i class="bi bi-gear"></i> <?= $mbl->transmisi ?></span>
+                                <span><i class="bi bi-calendar3"></i> <?= $mbl->tahun ?></span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-white fw-bold fs-5">Rp <?= number_format($mbl->harga_per_hari, 0, ',', '.') ?> <small class="text-secondary fw-normal">/ hari</small></span>
+                                <?php if ($mbl->status == 'Tersedia'): ?>
+                                    <?php
                                     $user = $this->session->userdata('user');
                                     $link_wa = wa_sewa($mbl, $user);
-                                ?>
-                                <a href="<?= $link_wa ?>" target="_blank" class="btn btn-wa btn-sm px-4">Sewa Sekarang</a>
-                            <?php else: ?>
-                                <button class="btn btn-secondary btn-sm px-4" disabled>Tidak Tersedia</button>
-                            <?php endif; ?>
+                                    ?>
+                                    <a href="<?= $link_wa ?>" target="_blank" class="btn btn-wa btn-sm px-4">Sewa Sekarang</a>
+                                <?php else: ?>
+                                    <button class="btn btn-secondary btn-sm px-4" disabled>Tidak Tersedia</button>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             <?php endforeach; ?>
         </div>
     </div>

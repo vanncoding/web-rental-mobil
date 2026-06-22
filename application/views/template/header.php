@@ -158,7 +158,7 @@
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('home') ?>">Beranda</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('home#armada') ?>">Armada</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Layanan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('home#kontak') ?>">Kontak</a></li>
                 </ul>
                 <div class="d-flex gap-2">
                     <?php if ($this->session->userdata('user')): ?>

@@ -1,5 +1,5 @@
 <!-- FOOTER PREMIUM (4 Kolom) -->
-<footer class="footer-dark py-5 mt-5">
+<footer id="kontak" class="footer-dark py-5 mt-5">
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-4">
@@ -10,8 +10,8 @@
             <div class="col-lg-2 col-6">
                 <h6 class="text-white fw-bold">Tautan Cepat</h6>
                 <ul class="list-unstyled text-secondary small">
-                    <li><a href="#" class="text-decoration-none text-secondary">Beranda</a></li>
-                    <li><a href="#" class="text-decoration-none text-secondary">Armada Kami</a></li>
+                    <li><a href="<?= base_url('home') ?>" class="text-decoration-none text-secondary">Beranda</a></li>
+                    <li><a href="<?= base_url('home#armada') ?>" class="text-decoration-none text-secondary">Armada Kami</a></li>
                     <li><a href="#" class="text-decoration-none text-secondary">Layanan Premium</a></li>
                     <li><a href="#" class="text-decoration-none text-secondary">Syarat & Ketentuan</a></li>
                     <li><a href="#" class="text-decoration-none text-secondary">Kebijakan Privasi</a></li>
@@ -44,4 +44,5 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

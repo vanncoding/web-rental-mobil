@@ -36,7 +36,8 @@
         .nav-link {
             color: #ccc !important;
             font-weight: 500;
-            margin: 0 12px;
+            margin: 0 21px;
+            font-size: 1.2rem;
         }
 
         .nav-link:hover {

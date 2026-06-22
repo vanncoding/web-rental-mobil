@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-4">
-                <h5 class="text-gold fw-bold"><i class="bi bi-star-fill"></i> PremiumRental</h5>
+                <h5 class="text-gold fw-bold"><i class="bi bi-star-fill"></i> Premium Rental</h5>
                 <p class="text-secondary" style="font-size: 0.9rem;">Solusi sewa mobil Untuk kebutuhan mobilitas anda dengan armada yang terawat dan layanan 24/jam.</p>
                 <!-- <p class="text-gold small"></p> -->
             </div>

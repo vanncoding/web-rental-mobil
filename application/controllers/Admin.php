@@ -61,7 +61,6 @@ class Admin extends CI_Controller
 
     public function tambah_mobil()
     {
-        if (!$this->session->userdata('admin')) redirect('admin/login');
         if ($this->input->post()) {
             $config['upload_path'] = './uploads/';
             $config['allowed_types'] = 'gif|jpg|jpeg|png';
@@ -73,12 +72,16 @@ class Admin extends CI_Controller
                 $gambar = $this->upload->data('file_name');
             }
 
+            // Bersihkan harga: hilangkan titik jika ada, lalu simpan sebagai integer
+            $harga = str_replace('.', '', $this->input->post('harga_per_hari'));
+            $harga = (int) $harga; // Konversi ke integer
+
             $data = [
                 'nama_mobil' => $this->input->post('nama_mobil'),
                 'merk' => $this->input->post('merk'),
                 'transmisi' => $this->input->post('transmisi'),
                 'tahun' => $this->input->post('tahun'),
-                'harga_per_hari' => str_replace('.', '', $this->input->post('harga_per_hari')),
+                'harga_per_hari' => $harga,
                 'status' => $this->input->post('status'),
                 'gambar' => $gambar,
             ];
@@ -91,7 +94,6 @@ class Admin extends CI_Controller
 
     public function edit_mobil($id)
     {
-        if (!$this->session->userdata('admin')) redirect('admin/login');
         $data['mobil'] = $this->M_mobil->get_by_id($id);
         if (!$data['mobil']) show_404();
 
@@ -106,12 +108,16 @@ class Admin extends CI_Controller
                 $gambar = $this->upload->data('file_name');
             }
 
+            // Bersihkan harga
+            $harga = str_replace('.', '', $this->input->post('harga_per_hari'));
+            $harga = (int) $harga;
+
             $update = [
                 'nama_mobil' => $this->input->post('nama_mobil'),
                 'merk' => $this->input->post('merk'),
                 'transmisi' => $this->input->post('transmisi'),
                 'tahun' => $this->input->post('tahun'),
-                'harga_per_hari' => str_replace('.', '', $this->input->post('harga_per_hari')),
+                'harga_per_hari' => $harga,
                 'status' => $this->input->post('status'),
                 'gambar' => $gambar,
             ];

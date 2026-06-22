@@ -8,14 +8,24 @@
         </div>
         <div class="row">
             <div class="col-md-4 mb-3"><label class="form-label">Transmisi</label>
-                <select name="transmisi" class="form-select bg-dark text-white"><option>Manual</option><option>Matic</option></select>
+                <select name="transmisi" class="form-select bg-dark text-white">
+                    <option>Manual</option>
+                    <option>Matic</option>
+                </select>
             </div>
             <div class="col-md-4 mb-3"><label class="form-label">Tahun</label><input type="number" name="tahun" class="form-control bg-dark text-white" required></div>
-            <div class="col-md-4 mb-3"><label class="form-label">Harga / Hari</label><input type="text" name="harga_per_hari" class="form-control bg-dark text-white" required></div>
+            <div class="col-md-4 mb-3"><label class="form-label">Harga / Hari (Rp)</label>
+                <input type="text" name="harga_per_hari" class="form-control bg-dark text-white" placeholder="Contoh: 350000" required>
+                <small class="text-secondary">Masukkan angka tanpa titik, misal 350000</small>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-6 mb-3"><label class="form-label">Status</label>
-                <select name="status" class="form-select bg-dark text-white"><option>Tersedia</option><option>Sedang Disewa</option><option>Service</option></select>
+                <select name="status" class="form-select bg-dark text-white">
+                    <option>Tersedia</option>
+                    <option>Sedang Disewa</option>
+                    <option>Service</option>
+                </select>
             </div>
             <div class="col-md-6 mb-3"><label class="form-label">Gambar</label><input type="file" name="gambar" class="form-control bg-dark text-white"></div>
         </div>

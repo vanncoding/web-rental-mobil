@@ -180,10 +180,8 @@
 
     <div class="main-content">
         <div class="container-fluid">
-           
+
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h3 class="text-white"><?= $title ?? 'Dashboard' ?></h3>
                 <a href="<?= base_url('home') ?>" class="text-secondary"><i class="bi bi-arrow-left"></i> Kembali ke Beranda</a>
             </div>
-
-         

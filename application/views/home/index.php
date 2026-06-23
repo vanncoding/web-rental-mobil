@@ -24,9 +24,7 @@
             </div>
             <div class="col-lg-5 d-none d-lg-block text-center">
                 <img src="<?= base_url('uploads/Depan.png') ?>"
-                    alt="Fleet Premium"
-                    class="img-fluid"
-                    style="max-height: 400px; object-fit: contain; filter: drop-shadow(0 10px 30px (212,175,55,0.2));">
+            
             </div>
         </div>
     </div>

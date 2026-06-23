@@ -20,7 +20,7 @@
                 <h6 class="text-white fw-bold">Hubungi Kami</h6>
                 <ul class="list-unstyled text-secondary small">
                     <li><i class="bi bi-geo-alt text-gold"></i> JL. Sudirman No. 123, Jakarta Pusat</li>
-                    <li><i class="bi bi-telephone text-gold"></i> +62 812-3456-7890</li>
+                    <li><i class="bi bi-telephone text-gold"></i> +62 895-3863-51878</li>
                     <li><i class="bi bi-envelope text-gold"></i> @premiumrental.id</li>
                 </ul>
             </div>

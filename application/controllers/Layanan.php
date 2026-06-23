@@ -32,20 +32,20 @@ class Layanan extends CI_Controller
         $email = $this->input->post('email');
         $pesan = $this->input->post('pesan');
 
-        // Konfigurasi SMTP (Gmail)
+       
         $config['protocol']    = 'smtp';
         $config['smtp_host']   = 'smtp.gmail.com';
         $config['smtp_port']   = 587;
-        $config['smtp_user']   = '19250772@bsi.ac.id';   // GANTI DENGAN EMAIL GMALMU
-        $config['smtp_pass']   = 'rkfjsprfdyxtrgwq';      // APP PASSWORD (16 DIGIT TANPA SPASI)
+        $config['smtp_user']   = '19250772@bsi.ac.id';   
+        $config['smtp_pass']   = 'rkfjsprfdyxtrgwq';      
         $config['smtp_crypto'] = 'tls';
         $config['charset']     = 'utf-8';
         $config['mailtype']    = 'html';
         $config['newline']     = "\r\n";
 
         $this->email->initialize($config);
-        $this->email->from($email, $nama);
-        $this->email->to('19250772@bsi.ac.id');      // GANTI DENGAN EMAIL TUJUAN
+        $this->email->from($email, $nama);           // email pengirim
+        $this->email->to('19250772@bsi.ac.id');      // Email tujuan buat form layanan
         $this->email->subject('Pesan Baru dari Layanan PremiumRental');
         $this->email->message("
             <h3>Pesan dari Form Layanan</h3>

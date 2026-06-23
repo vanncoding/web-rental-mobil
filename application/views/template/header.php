@@ -36,7 +36,7 @@
         .nav-link {
             color: #ccc !important;
             font-weight: 500;
-            margin: 0 21px;
+            margin: 0 21gitpx;
             font-size: 1.2rem;
         }
 
@@ -147,7 +147,7 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- Bagian navbar ini -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="<?= base_url('home') ?>"><i class="bi bi-star-fill text-gold"></i> PremiumRental</a>
@@ -158,8 +158,8 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('home') ?>">Beranda</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('home#armada') ?>">Armada</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('layanan') ?>">Layanan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?= base_url('home#kontak') ?>">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
                 </ul>
                 <div class="d-flex gap-2">
                     <?php if ($this->session->userdata('user')): ?>
@@ -175,4 +175,4 @@
             </div>
         </div>
     </nav>
-    <div style="height: 76px;"></div> <!-- Spacer fixed navbar -->
+    <div style="height: 76px;"></div> <!-- Fix jarak navbar aga renggang dikit -->

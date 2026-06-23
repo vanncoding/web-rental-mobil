@@ -14,7 +14,7 @@ class Admin extends CI_Controller
         $this->load->helper('whatsapp');
     }
 
-    // ============ LOGIN ADMIN ============
+   
     public function login()
     {
         if ($this->session->userdata('admin')) {
@@ -39,7 +39,7 @@ class Admin extends CI_Controller
         redirect('admin/login');
     }
 
-    // ============ DASHBOARD ============
+    
     public function dashboard()
     {
         if (!$this->session->userdata('admin')) redirect('admin/login');
@@ -51,7 +51,6 @@ class Admin extends CI_Controller
         $this->load->view('admin/dashboard', $data);
     }
 
-    // ============ DATA MOBIL (CRUD) ============
     public function mobil()
     {
         if (!$this->session->userdata('admin')) redirect('admin/login');
@@ -72,9 +71,8 @@ class Admin extends CI_Controller
                 $gambar = $this->upload->data('file_name');
             }
 
-            // Bersihkan harga: hilangkan titik jika ada, lalu simpan sebagai integer
             $harga = str_replace('.', '', $this->input->post('harga_per_hari'));
-            $harga = (int) $harga; // Konversi ke integer
+            $harga = (int) $harga; 
 
             $data = [
                 'nama_mobil' => $this->input->post('nama_mobil'),
@@ -108,7 +106,7 @@ class Admin extends CI_Controller
                 $gambar = $this->upload->data('file_name');
             }
 
-            // Bersihkan harga
+          
             $harga = str_replace('.', '', $this->input->post('harga_per_hari'));
             $harga = (int) $harga;
 
@@ -136,7 +134,7 @@ class Admin extends CI_Controller
         redirect('admin/mobil');
     }
 
-    // ============ DATA TRANSAKSI ============
+   
     public function transaksi()
     {
         if (!$this->session->userdata('admin')) redirect('admin/login');

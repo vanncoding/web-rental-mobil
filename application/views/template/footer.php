@@ -12,9 +12,8 @@
                 <ul class="list-unstyled text-secondary small">
                     <li><a href="<?= base_url('home') ?>" class="text-decoration-none text-secondary">Beranda</a></li>
                     <li><a href="<?= base_url('home#armada') ?>" class="text-decoration-none text-secondary">Armada Kami</a></li>
-                    <li><a href="#" class="text-decoration-none text-secondary">Layanan Premium</a></li>
-                    <li><a href="#" class="text-decoration-none text-secondary">Syarat & Ketentuan</a></li>
-                    <li><a href="#" class="text-decoration-none text-secondary">Kebijakan Privasi</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Layanan </a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Kontak</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-6">

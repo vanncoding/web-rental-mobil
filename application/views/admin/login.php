@@ -96,7 +96,7 @@
             <button type="submit" class="btn-gold">Login</button>
         </form>
         <p class="text-center text-secondary mt-3 small">
-            <i class="bi bi-shield-lock"></i> Akses terbatas untuk admin
+            <i class="bi bi-shield-lock"></i> Akses untuk admin
         </p>
     </div>
 </body>

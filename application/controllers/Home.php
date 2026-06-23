@@ -14,18 +14,17 @@ class Home extends CI_Controller
 
     public function index()
     {
-        // Ambil keyword dari GET
+        
         $keyword = $this->input->get('search', TRUE);
         $keyword = trim($keyword);
 
-        // Jika ada keyword, cari; jika tidak, tampilkan semua
         if (!empty($keyword)) {
             $data['mobil'] = $this->M_mobil->search($keyword);
         } else {
             $data['mobil'] = $this->M_mobil->get_all();
         }
 
-        // Hitung mobil tersedia
+        
         $data['available_count'] = $this->M_mobil->count_by_status('Tersedia');
         $data['keyword'] = $keyword;
         $data['user'] = $this->session->userdata('user');

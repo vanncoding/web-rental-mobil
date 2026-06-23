@@ -1,6 +1,6 @@
 <?php $this->load->view('template/header', ['title' => 'Home']); ?>
 
-<!-- HERO -->
+
 <section class="py-5" style="background: linear-gradient(135deg, #0A0A0A 60%, #a9acb3);">
     <div class="container">
         <div class="row align-items-center">
@@ -32,7 +32,7 @@
     </div>
 </section>
 
-<!-- ARMADA / LIST MOBIL -->
+  <!-- Buat isi content mobil -->
 <section id="armada" class="py-5">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
@@ -53,10 +53,10 @@
                                     <i class="bi bi-image" style="font-size: 60px;"></i>
                                 </div>
                             <?php endif; ?>
-                            <!-- BADGE DIHAPUS DARI SINI -->
+                          
                         </div>
                         <div class="p-4">
-                            <!-- BADGE DIPINDAHKAN KE SINI (di atas nama mobil) -->
+                            <!-- Badge di pindahin ke atas mobil -->
                             <span class="badge badge-<?= strtolower(str_replace(' ', '', $mbl->status)) ?> badge-status mb-2">
                                 <?= $mbl->status ?>
                             </span>

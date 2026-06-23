@@ -187,6 +187,3 @@
                 <h3 class="text-white"><?= $title ?? 'Dashboard' ?></h3>
                 <a href="<?= base_url('home') ?>" class="text-secondary"><i class="bi bi-arrow-left"></i> Kembali ke Beranda</a>
             </div>
-
-            <!-- ISI KONTEN VIEW AKAN MASUK DI SINI -->
-            <!-- JANGAN TAMBAHKAN closing div di sini, karena akan ditutup di footer -->

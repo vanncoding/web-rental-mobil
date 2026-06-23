@@ -12,9 +12,8 @@
                 <ul class="list-unstyled text-secondary small">
                     <li><a href="<?= base_url('home') ?>" class="text-decoration-none text-secondary">Beranda</a></li>
                     <li><a href="<?= base_url('home#armada') ?>" class="text-decoration-none text-secondary">Armada Kami</a></li>
-                    <li><a href="#" class="text-decoration-none text-secondary">Layanan Premium</a></li>
-                    <li><a href="#" class="text-decoration-none text-secondary">Syarat & Ketentuan</a></li>
-                    <li><a href="#" class="text-decoration-none text-secondary">Kebijakan Privasi</a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Layanan </a></li>
+                    <li><a href="#" class="text-decoration-none text-secondary">Kontak</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-6">
@@ -26,7 +25,7 @@
                 </ul>
             </div>
             <div class="col-lg-3">
-                <h6 class="text-white fw-bold">Ikuti Kami</h6>
+                <h6 class="text-white fw-bold">Ikuti </h6>
                 <p class="text-secondary small">Promo dan Update tentang armada Kami</p>
                 <div class="d-flex gap-3 fs-5">
                     <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>

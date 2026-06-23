@@ -23,7 +23,7 @@ if (!function_exists('wa_sewa')) {
             Tanggal Sewa: [ ], 
             Tanggal Kembali: [ ].
             *PESAN DARI ADMIN*
-            /JIKA NAMA TIDAK MUNCUL, WAJIB DAFTAR DAN LOGIN TERLEBIH DAHULU!!/";
+            _JIKA NAMA TIDAK MUNCUL, WAJIB DAFTAR DAN LOGIN TERLEBIH DAHULU!!_";
             
         }
         

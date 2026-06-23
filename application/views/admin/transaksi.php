@@ -25,7 +25,6 @@
     </table>
 </div>
 
-<!-- MODAL TAMBAH TRANSAKSI -->
 <div class="modal fade" id="modalTambahTransaksi" tabindex="-1">
 <div class="modal-dialog modal-lg"><div class="modal-content bg-dark text-white">
 <div class="modal-header border-secondary"><h5 class="text-gold">Tambah Transaksi Baru</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>

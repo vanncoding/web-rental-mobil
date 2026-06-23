@@ -25,7 +25,7 @@
                 </ul>
             </div>
             <div class="col-lg-3">
-                <h6 class="text-white fw-bold">Ikuti Kami</h6>
+                <h6 class="text-white fw-bold">Ikuti </h6>
                 <p class="text-secondary small">Promo dan Update tentang armada Kami</p>
                 <div class="d-flex gap-3 fs-5">
                     <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>
